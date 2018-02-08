@@ -361,8 +361,8 @@
       
         <h1 id="20170927-博客搬家"><a href="#20170927-博客搬家" class="headerlink" title="20170927 - 博客搬家"></a>20170927 - 博客搬家</h1><p>今天重新开始折腾自己的虚拟机。对于自己省钱买的阿里云虚拟机，安装的wordpress实在是卡的要命。所以，还是想折腾一下换成node.js的<strong>Hexo</strong>平台。不过好久没有折腾了，好多linux的命令都忘记了，简单记录一下，温故而知新。</p>
 <p>之前安装的wordpress是基于apache2作为web服务器的。所以，需要停止apache2的服务，并且禁止随系统自动启动。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># 查询系统中所有的服务状态</div><div class="line">service --status-list</div><div class="line"></div><div class="line"># 停止某个特定的服务（启动就是start）</div><div class="line">systemctl stop xxx.service</div><div class="line"></div><div class="line"># 关闭服务随系统启动</div><div class="line">systemctl disable xxx.service</div></pre></td></tr></table></figure>
-<p>根据<a href="https://hexo.io/" target="_blank" rel="external">Hexo官网</a>的教程，很简单的就启动了博客服务。记得要配置服务器的端口为80。后续日记再记录如何玩转<em>Hexo</em>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 查询系统中所有的服务状态</span><br><span class="line">service --status-list</span><br><span class="line"></span><br><span class="line"># 停止某个特定的服务（启动就是start）</span><br><span class="line">systemctl stop xxx.service</span><br><span class="line"></span><br><span class="line"># 关闭服务随系统启动</span><br><span class="line">systemctl disable xxx.service</span><br></pre></td></tr></table></figure>
+<p>根据<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo官网</a>的教程，很简单的就启动了博客服务。记得要配置服务器的端口为80。后续日记再记录如何玩转<em>Hexo</em>。</p>
 <p>既然使用Hexo来作为博客发布平台，那么就选择<em>jenkins</em>自动发布吧，顺便后期研究一下用<em>pm2</em>自动拉起服务，最后再装一个<em>elasticSearch</em>做内容搜索。<br>哇哈哈，完美。</p>
 
       
@@ -477,7 +477,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
