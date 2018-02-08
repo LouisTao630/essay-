@@ -292,6 +292,131 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.louistao.cn/2018/02/08/fetch-api/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Louis Tao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="随遇而安">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/08/fetch-api/" itemprop="url">使用Fetch API 进行网络请求</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-08T00:00:00+08:00">
+                2018-02-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="使用Fetch-API进行网络请求"><a href="#使用Fetch-API进行网络请求" class="headerlink" title="使用Fetch API进行网络请求"></a>使用Fetch API进行网络请求</h1><p>Fetch是一种XMLHttpRequest的替代方案，他比HttpRequest更为优雅，书写更流畅。</p>
+<h2 id="Fetch函数简单的用法"><a href="#Fetch函数简单的用法" class="headerlink" title="Fetch函数简单的用法"></a>Fetch函数简单的用法</h2><p>先来看一段简单的代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fetch(<span class="string">'http://www.baidu.com'</span>)</span><br><span class="line">	.then(<span class="function">(<span class="params">response</span>)=&gt;</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> res.text();</span><br><span class="line">		&#125;)</span><br><span class="line">	.then(<span class="function">(<span class="params">res</span>)=&gt;</span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(res);</span><br><span class="line">		&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>通过异步流函数，很容易理解函数一步步的动作。<strong>Fetch</strong>函数也封装了<em>Request</em>，<em>Response</em>等接口，很容易的组装和获得不同的请求内容。</p>
+<h2 id="稍微复杂点，自定义请求参数"><a href="#稍微复杂点，自定义请求参数" class="headerlink" title="稍微复杂点，自定义请求参数"></a>稍微复杂点，自定义请求参数</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myHeaders = <span class="keyword">new</span> Headers();</span><br><span class="line"><span class="keyword">var</span> myInit = &#123; <span class="attr">method</span>: <span class="string">'GET'</span>,</span><br><span class="line">               headers: myHeaders,</span><br><span class="line">               mode: <span class="string">'cors'</span>,</span><br><span class="line">               cache: <span class="string">'default'</span> &#125;;</span><br><span class="line">fetch(<span class="string">'flowers.jpg'</span>,myInit)</span><br><span class="line">	.then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">	  <span class="keyword">return</span> response.blob();</span><br><span class="line">	&#125;)</span><br><span class="line">	.then(<span class="function"><span class="keyword">function</span>(<span class="params">myBlob</span>) </span>&#123;</span><br><span class="line">	  <span class="keyword">var</span> objectURL = URL.createObjectURL(myBlob);</span><br><span class="line">	  myImage.src = objectURL;</span><br><span class="line">	&#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>使用<strong>Headers</strong>对象可以设置更多的头信息。<strong>myInit</strong>中也扩展了请求的类型、模式、缓存等参数。一目了然。</p>
+<h3 id="使用限制"><a href="#使用限制" class="headerlink" title="使用限制"></a>使用限制</h3><p>当然好的东西必然会面对很多老的浏览器不兼容。所以在需要兼容老的浏览器的应用场景，还是要注意。不过排查这一点，新的API确实让人焕然一新的感觉。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.louistao.cn/2018/02/06/test-deploy-from-git/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -824,7 +949,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
@@ -837,7 +962,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">Tags</span>
                 
               </div>
