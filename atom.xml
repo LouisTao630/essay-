@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>随遇而安</title>
+  
+  <subtitle>备忘录</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.louistao.cn/"/>
+  <updated>2018-02-08T15:35:55.406Z</updated>
+  <id>http://blog.louistao.cn/</id>
+  
+  <author>
+    <name>Louis Tao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Fetch API 进行网络请求</title>
+    <link href="http://blog.louistao.cn/2018/02/08/fetch-api/"/>
+    <id>http://blog.louistao.cn/2018/02/08/fetch-api/</id>
+    <published>2018-02-07T16:00:00.000Z</published>
+    <updated>2018-02-08T15:35:55.406Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用Fetch-API进行网络请求&quot;&gt;&lt;a href=&quot;#使用Fetch-API进行网络请求&quot; class=&quot;headerlink&quot; title=&quot;使用Fetch API进行网络请求&quot;&gt;&lt;/a&gt;使用Fetch
+        
+      
+    
+    </summary>
+    
+    
+      <category term="js,fetch" scheme="http://blog.louistao.cn/tags/js-fetch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test-deploy-from-git</title>
+    <link href="http://blog.louistao.cn/2018/02/06/test-deploy-from-git/"/>
+    <id>http://blog.louistao.cn/2018/02/06/test-deploy-from-git/</id>
+    <published>2018-02-05T17:09:08.000Z</published>
+    <updated>2018-02-05T17:09:37.532Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>linux-config-hostname</title>
+    <link href="http://blog.louistao.cn/2017/12/11/linux-config-hostname/"/>
+    <id>http://blog.louistao.cn/2017/12/11/linux-config-hostname/</id>
+    <published>2017-12-11T15:28:11.000Z</published>
+    <updated>2017-12-11T17:05:12.519Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux-Hostname-配置说明&quot;&gt;&lt;a href=&quot;#Linux-Hostname-配置说明&quot; class=&quot;headerlink&quot; title=&quot;Linux Hostname 配置说明&quot;&gt;&lt;/a&gt;Linux Hostname
+        
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://blog.louistao.cn/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客搬家</title>
+    <link href="http://blog.louistao.cn/2017/09/30/20170927-%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6/"/>
+    <id>http://blog.louistao.cn/2017/09/30/20170927-博客搬家/</id>
+    <published>2017-09-29T17:38:42.800Z</published>
+    <updated>2017-09-29T17:38:42.800Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;20170927-博客搬家&quot;&gt;&lt;a href=&quot;#20170927-博客搬家&quot; class=&quot;headerlink&quot; title=&quot;20170927 - 博客搬家&quot;&gt;&lt;/a&gt;20170927 -
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.louistao.cn/2017/09/19/hello-world/"/>
+    <id>http://blog.louistao.cn/2017/09/19/hello-world/</id>
+    <published>2017-09-18T17:21:27.907Z</published>
+    <updated>2017-09-18T17:21:27.907Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
