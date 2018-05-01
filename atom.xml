@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.louistao.cn/"/>
-  <updated>2018-02-08T15:35:55.406Z</updated>
+  <updated>2018-05-01T13:25:27.272Z</updated>
   <id>http://blog.louistao.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTTP Basic Access Auth</title>
+    <link href="http://blog.louistao.cn/2018/05/01/basic-access-auth/"/>
+    <id>http://blog.louistao.cn/2018/05/01/basic-access-auth/</id>
+    <published>2018-05-01T13:14:28.000Z</published>
+    <updated>2018-05-01T13:25:27.272Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;Basic-access-authentication-（BA）&quot;&gt;&lt;a href=&quot;#Basic-access-authentication-（BA）&quot; class=&quot;headerlink&quot; title=&quot;Basic access
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>使用Fetch API 进行网络请求</title>
